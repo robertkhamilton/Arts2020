@@ -13,6 +13,28 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-29",
+                    "maxclass": "button",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 39.0, 33.0, 22.0, 22.0 ]
+                }
+            },
+            {
+                "box": {
+                    "comment": "",
+                    "id": "obj-13",
+                    "index": 0,
+                    "maxclass": "outlet",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 1195.0, 223.0, 30.0, 30.0 ]
+                }
+            },
+            {
+                "box": {
                     "id": "obj-27",
                     "maxclass": "comment",
                     "numinlets": 1,
@@ -280,7 +302,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 297.0, 34.5, 225.0, 20.0 ],
+                    "patching_rect": [ 321.0, 35.0, 225.0, 20.0 ],
                     "text": "Select \"Launchpad X LPX MIDI Out\""
                 }
             },
@@ -290,13 +312,13 @@
                     "fontname": "Arial",
                     "fontsize": 13.0,
                     "id": "obj-2",
-                    "items": [ "Launchpad X LPX DAW Out", ",", "Launchpad X LPX MIDI Out", ",", "to Max 1", ",", "to Max 2" ],
+                    "items": [ "to Max 1", ",", "to Max 2", ",", "Launchpad X LPX DAW Out", ",", "Launchpad X LPX MIDI Out" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "int", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 39.0, 33.0, 251.0, 23.0 ]
+                    "patching_rect": [ 63.0, 33.0, 251.0, 23.0 ]
                 }
             },
             {
@@ -1783,7 +1805,7 @@
                     "fontname": "Arial",
                     "fontsize": 13.0,
                     "id": "obj-204",
-                    "items": [ "Launchpad X LPX DAW Out", ",", "Launchpad X LPX MIDI Out", ",", "to Max 1", ",", "to Max 2" ],
+                    "items": [ "to Max 1", ",", "to Max 2", ",", "Launchpad X LPX DAW Out", ",", "Launchpad X LPX MIDI Out" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -1854,7 +1876,7 @@
                 "patchline": {
                     "destination": [ "obj-206", 0 ],
                     "hidden": 1,
-                    "midpoints": [ 164.5, 66.0, 1179.0, 66.0, 1179.0, 180.0, 1265.5, 180.0 ],
+                    "midpoints": [ 188.5, 66.0, 1179.0, 66.0, 1179.0, 180.0, 1265.5, 180.0 ],
                     "source": [ "obj-2", 1 ]
                 }
             },
@@ -1862,7 +1884,7 @@
                 "patchline": {
                     "destination": [ "obj-2", 0 ],
                     "hidden": 1,
-                    "midpoints": [ 1265.5, 102.0, 1233.0, 102.0, 1233.0, 18.0, 48.5, 18.0 ],
+                    "midpoints": [ 1265.5, 102.0, 1233.0, 102.0, 1233.0, 18.0, 72.5, 18.0 ],
                     "order": 1,
                     "source": [ "obj-203", 0 ]
                 }
@@ -1888,7 +1910,15 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-13", 0 ],
+                    "order": 1,
+                    "source": [ "obj-206", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-18", 0 ],
+                    "order": 0,
                     "source": [ "obj-206", 0 ]
                 }
             },
@@ -1954,6 +1984,14 @@
                     "destination": [ "obj-276", 0 ],
                     "order": 1,
                     "source": [ "obj-277", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-203", 1 ],
+                    "hidden": 1,
+                    "midpoints": [ 48.5, 66.0, 1242.0, 66.0, 1242.0, 72.0, 1301.5, 72.0 ],
+                    "source": [ "obj-29", 0 ]
                 }
             },
             {
