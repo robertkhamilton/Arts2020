@@ -1,0 +1,9 @@
+chuck granulator:0:love.wav
+chuck granulator:1:love.wav
+chuck granulator:2:love.wav
+chuck granulator:3:love.wav
+chuck granulator:4:love.wav
+chuck granulator:5:love.wav
+chuck granulator:6:love.wav
+chuck granulator:7:love.wav
+chuck granulator:8:love.wav
