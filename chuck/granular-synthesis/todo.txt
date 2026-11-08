@@ -1,0 +1,55 @@
+# Music -- people using granulation for good
+    Xenakis - Analogique A-B ( example for origins )
+        https://www.researchgate.net/publication/238067247_FORMALIZATION_AND_INTUITION_IN_ANALOGIQUE_A_ET_B_with_some_remarks_on_the_historical-mathematical_sources_of_Xenakis1
+        https://www.youtube.com/watch?v=sOGkhekIGzo
+
+    Note: Granular transformation !not! synthesis
+
+    Truax - River Run ( example for audio rate graining )
+        https://www.sfu.ca/~truax/river.html
+        https://youtu.be/u81IGEFt7dM?si=NMuUyMt5ppTuO1ba
+
+    Truax - Wings of Nike
+        https://www.sfu.ca/~truax/nike.html
+        https://youtu.be/fiOdUXNPgFo?si=4It7KyTu4239bTJL
+
+    Wishart - Encounters in The Republic of Heaven (Parts 1 & 2) ( example highlighting selection of grain material )
+        https://www.trevorwishart.co.uk/encounters.html
+        https://icrdistribution.bandcamp.com/album/encounters-in-the-republic-of-heaven
+
+    Wishart - In the Garden of Earthly Delights ( example showing more grain source material )
+        https://trevorwishart.co.uk/garden.html
+        https://icrdistribution.bandcamp.com/album/the-garden-of-earthly-delights (26:46)
+
+
+# Software - the many ways to granulate in ChucK
+    ChucK Granulators ( the start of it ) ( written in chuck )
+        https://github.com/robertkhamilton/Arts2020/tree/main/chuck
+    
+    LiSa => ChucK ( dan trueman ) ( ships with chuck )
+        https://chuck.stanford.edu/doc/reference/ugens-advanced.html#LiSa
+
+    Chugin Granulators ( written for chuck but is compiled )
+        https://everettmiles.com/portfolio-pages/granulators
+        https://github.com/everettmcarpenter/emc-chugins/tree/main
+
+# Overview of the ChucK Granulator
+    Per grain parameters
+        Pitch ( file rate )
+        Position ( in file )
+        Grain size ( 1.0ms - big )
+    
+    Randomizing the above parameters
+        Show what that sounds like
+
+# Techniques - the cool ways to use granular synthesis
+# let's live code it. . . 
+    Microcollage - randomized position
+
+    Time-stretching - interpolate through buffer at a some multiple of the file length
+
+    Pitch shifting - sounds terrible!
+
+    Unison effects - small randomized pitch, position and size with 
+
+    Audio rate windowing - ( awesome ) 
